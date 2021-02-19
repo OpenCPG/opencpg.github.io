@@ -1,0 +1,76 @@
+﻿OpenCPG_COVID19_ED_SC : Validation Results
+=========================================
+
+err = 22, warn = 2, info = 11
+IG Publisher Version: 1.1.59
+Generated Fri Feb 19 02:02:31 UTC 2021. FHIR version 4.0.1 for org.opencpg.covid19.ed.sc#0.1.0 (canonical = http://opencpg.org/fhir/covid19.ed.sc)
+
+ Build Errors : 0 / 0 / 0
+ /github/workspace/input/covid19-ed-sc : 0 / 0 / 1
+ /github/workspace/input/resources/library/library-CDSConnectCommons : 2 / 0 / 8
+ /github/workspace/input/resources/library/library-COVID19ConceptsPremapped : 3 / 0 / 8
+ /github/workspace/input/resources/library/library-COVID19EDCPGRetrieves : 14 / 6 / 7
+ /github/workspace/input/resources/library/library-PatientDemographics : 3 / 0 / 8
+</table>
+== n/a ==
+== /github/workspace/input/covid19-ed-sc.xml ==
+INFORMATION: ImplementationGuide/org.opencpg.covid19.ed.sc: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+== /github/workspace/input/resources/library/library-CDSConnectCommons.json ==
+INFORMATION: Library/CDSConnectCommons: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
+ERROR: Library/CDSConnectCommons: Library.relatedArtifact[0].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1' does not resolve
+ERROR: Library/CDSConnectCommons: Library.relatedArtifact[1].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIRHelpers|4.0.1' does not resolve
+INFORMATION: Library/CDSConnectCommons: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary - listed in meta
+INFORMATION: Library/CDSConnectCommons: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
+INFORMATION: Library/CDSConnectCommons: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary
+INFORMATION: Library/CDSConnectCommons: Library.content[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary
+INFORMATION: Library/CDSConnectCommons: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary - listed in meta
+INFORMATION: Library/CDSConnectCommons: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
+INFORMATION: Library/CDSConnectCommons: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary
+== /github/workspace/input/resources/library/library-COVID19ConceptsPremapped.json ==
+INFORMATION: Library/COVID19ConceptsPremapped: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
+ERROR: Library/COVID19ConceptsPremapped: Library.relatedArtifact[0].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1' does not resolve
+ERROR: Library/COVID19ConceptsPremapped: Library.relatedArtifact[1].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIRHelpers|4.0.1' does not resolve
+ERROR: Library/COVID19ConceptsPremapped: Library.relatedArtifact[8].resource: Canonical URL 'http://hl7.org/fhir/sid/icd-10-pcs' does not resolve
+INFORMATION: Library/COVID19ConceptsPremapped: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary - listed in meta
+INFORMATION: Library/COVID19ConceptsPremapped: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
+INFORMATION: Library/COVID19ConceptsPremapped: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary
+INFORMATION: Library/COVID19ConceptsPremapped: Library.content[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary
+INFORMATION: Library/COVID19ConceptsPremapped: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary - listed in meta
+INFORMATION: Library/COVID19ConceptsPremapped: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
+INFORMATION: Library/COVID19ConceptsPremapped: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary
+== /github/workspace/input/resources/library/library-COVID19EDCPGRetrieves.json ==
+WARNING: COVID19_ED_CPG_Retrieves: Could not resolve code path codeCodeableConcept for the type of the retrieve FHIR.DeviceRequest.
+WARNING: COVID19_ED_CPG_Retrieves: Could not resolve membership operator for terminology target of the retrieve.
+ERROR: COVID19_ED_CPG_Retrieves: Could not resolve call to operator ServiceRequestActiveOrCompleted with signature (list<FHIR.DeviceRequest>).
+ERROR: COVID19_ED_CPG_Retrieves: Could not validate reference to expression Prior Respiratory Support- Supplemental O2 - DeviceRequest because its definition contains errors.
+ERROR: COVID19_ED_CPG_Retrieves: Could not resolve call to operator ServiceRequestActiveOrCompleted with signature (list<FHIR.DeviceRequest>).
+ERROR: COVID19_ED_CPG_Retrieves: Could not validate reference to expression Prior Respiratory Support- High Flow Nasal Canula - DeviceRequest because its definition contains errors.
+ERROR: COVID19_ED_CPG_Retrieves: Could not resolve call to operator ServiceRequestActiveOrCompleted with signature (list<FHIR.DeviceRequest>).
+ERROR: COVID19_ED_CPG_Retrieves: Could not validate reference to expression Prior Respiratory Support- Non Invasive Positive Pressure Ventilation - DeviceRequest because its definition contains errors.
+ERROR: COVID19_ED_CPG_Retrieves: Could not resolve call to operator Verified with signature (list<FHIR.DiagnosticReport>).
+ERROR: COVID19_ED_CPG_Retrieves: Could not validate reference to expression Has Bilateral Pneumonia - DiagnosticReport because its definition contains errors.
+ERROR: COVID19_ED_CPG_Retrieves: Could not resolve call to operator Verified with signature (list<FHIR.DiagnosticReport>).
+ERROR: COVID19_ED_CPG_Retrieves: Could not validate reference to expression Has RV dilatation - DiagnosticReport because its definition contains errors.
+ERROR: COVID19_ED_CPG_Retrieves: Could not resolve call to operator Verified with signature (list<FHIR.DiagnosticReport>).
+ERROR: COVID19_ED_CPG_Retrieves: Could not validate reference to expression Has RV enlargement - DiagnosticReport because its definition contains errors.
+ERROR: COVID19_ED_CPG_Retrieves.cql: CQL Processing failed with (12) errors.
+INFORMATION: Library/COVID19EDCPGRetrieves: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
+INFORMATION: Library/COVID19EDCPGRetrieves: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary - listed in meta
+INFORMATION: Library/COVID19EDCPGRetrieves: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
+INFORMATION: Library/COVID19EDCPGRetrieves: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary
+INFORMATION: Library/COVID19EDCPGRetrieves: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary - listed in meta
+INFORMATION: Library/COVID19EDCPGRetrieves: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
+INFORMATION: Library/COVID19EDCPGRetrieves: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary
+ERROR: Library/COVID19EDCPGRetrieves: Library.content[1]: Library.content:elmXmlContent.data: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary)
+== /github/workspace/input/resources/library/library-PatientDemographics.json ==
+ERROR: PatientDemographics.cql: CQL Processing failed with exception: Unknown FHIRAllTypes code 'AdministrativeGender'
+INFORMATION: Library/PatientDemographics: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
+ERROR: Library/PatientDemographics: Library.relatedArtifact[0].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1' does not resolve
+ERROR: Library/PatientDemographics: Library.relatedArtifact[1].resource: Canonical URL 'http://hl7.org/fhir/Library/FHIRHelpers|4.0.1' does not resolve
+INFORMATION: Library/PatientDemographics: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary - listed in meta
+INFORMATION: Library/PatientDemographics: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
+INFORMATION: Library/PatientDemographics: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary
+INFORMATION: Library/PatientDemographics: Library.content[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary
+INFORMATION: Library/PatientDemographics: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary - listed in meta
+INFORMATION: Library/PatientDemographics: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
+INFORMATION: Library/PatientDemographics: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary
