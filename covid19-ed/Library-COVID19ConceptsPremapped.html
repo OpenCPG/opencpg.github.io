@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>ORG.OPENCPG.COVID19.ED.SC\CQL Library - COVID-19 Shared Concepts and Terminology - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6.3"}
+    h3,h4,h5,h6{--heading-prefix:"6.3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">OpenCPG COVID-19 Emergency Department Severity Classification and Disposition Recommendation</span><br/>0.1.0 - CI Build</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">MyIg Background<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Background</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="spec.html">Detailed Specification</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>      
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>CQL Library - COVID-19 Shared Concepts and Terminology</b></li>
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <div id="segment-content">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">OpenCPG COVID-19 Emergency Department Severity Classification and Disposition Recommendation - Local Development build (v0.1.0). See the <a href="http://opencpg.org/fhir/covid19.ed.sc/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+  
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="Library-COVID19ConceptsPremapped.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Library-COVID19ConceptsPremapped.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">Library: CQL Library - COVID-19 Shared Concepts and Terminology</h2>
+
+
+  
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><h2>Related Artifacts</h2><table class="grid"><tr><td>depends-on</td><td><code>http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1</code></td></tr><tr><td>depends-on</td><td><code>http://hl7.org/fhir/Library/FHIRHelpers|4.0.1</code></td></tr><tr><td>depends-on</td><td><code>https://opencpg.org/ontology/covid19/ed/</code></td></tr><tr><td>depends-on</td><td><code>urn:oid:2.16.840.1.113883.6.14</code></td></tr><tr><td>depends-on</td><td><a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-cpt-4.html">CPT-4</a></td></tr><tr><td>depends-on</td><td><a href="http://terminology.hl7.org/2.0.0/CodeSystem-icd10CM.html">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a></td></tr><tr><td>depends-on</td><td><a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a></td></tr><tr><td>depends-on</td><td><a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-snomed-CT.html">SNOMED CT International Edition</a></td></tr><tr><td>depends-on</td><td><code>http://hl7.org/fhir/sid/icd-10-pcs</code></td></tr><tr><td>depends-on</td><td><a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-rxNorm.html">RxNorm</a></td></tr></table><h2>Contents</h2><p><code>text/cql</code></p><pre><code class="language-sql">library COVID19_ED_CPG_Concepts_Premapped version '0.0.1'
+
+using FHIR version '4.0.1'
+
+include FHIRHelpers version '4.0.1'
+
+codesystem &quot;C_19_ED_CPG&quot;: 'https://opencpg.org/ontology/covid19/ed/'
+codesystem &quot;HCPCS&quot;: 'urn:oid:2.16.840.1.113883.6.14'
+codesystem &quot;CPT&quot;: 'http://www.ama-assn.org/go/cpt'
+codesystem &quot;ICD_10_CM&quot;: 'http://hl7.org/fhir/sid/icd-10-cm'
+codesystem &quot;LOINC&quot;: 'http://loinc.org'
+codesystem &quot;SNOMED&quot;: 'http://snomed.info/sct'
+codesystem &quot;ICD_10_PCS&quot;: 'http://hl7.org/fhir/sid/icd-10-pcs'
+codesystem &quot;RX_NORM&quot;: 'http://www.nlm.nih.gov/research/umls/rxnorm'
+
+code &quot;LOINC_9269_2&quot; : '9269-2' from LOINC
+code &quot;ICD_10_CM_R_04_2&quot; : 'R04.2' from ICD_10_CM
+code &quot;CPT_94760&quot; : '94760' from CPT
+code &quot;CPT_94761&quot; : '94761' from CPT
+code &quot;LOINC_9279_1&quot; : '9279-1' from LOINC
+code &quot;LOINC_2544737_0&quot; : '2544737.0' from LOINC
+code &quot;LOINC_8480_6&quot; : '8480-6' from LOINC
+code &quot;LOINC_8462_4&quot; : '8462-4' from LOINC
+code &quot;LOINC_3150_0&quot; : '3150-0' from LOINC
+code &quot;LOINC_3151_8&quot; : '3151-8' from LOINC
+code &quot;LOINC_71835_3&quot; : '71835-3' from LOINC
+code &quot;HCPCS_A4615&quot; : 'A4615' from HCPCS
+code &quot;CPT_94660_0&quot; : '94660.0' from CPT
+code &quot;ICD_10_PCS_5_A_09357&quot; : '5A09357' from ICD_10_PCS
+code &quot;ICD_10_PCS_5_A_09358&quot; : '5A09358' from ICD_10_PCS
+code &quot;ICD_10_PCS_5_A_09457&quot; : '5A09457' from ICD_10_PCS
+code &quot;ICD_10_PCS_5_A_09458&quot; : '5A09458' from ICD_10_PCS
+code &quot;ICD_10_PCS_5_A_09557&quot; : '5A09557' from ICD_10_PCS
+code &quot;ICD_10_PCS_5_A_09558&quot; : '5A09558' from ICD_10_PCS
+code &quot;HCPCS_J1250&quot; : 'J1250' from HCPCS
+code &quot;RX_NORM_3616_0&quot; : '3616.0' from RX_NORM
+code &quot;HCPCS_J0171&quot; : 'J0171' from HCPCS
+code &quot;RX_NORM_3992_0&quot; : '3992.0' from RX_NORM
+code &quot;RX_NORM_7512_0&quot; : '7512.0' from RX_NORM
+code &quot;RX_NORM_11149_0&quot; : '11149.0' from RX_NORM
+code &quot;HCPCS_J1265&quot; : 'J1265' from HCPCS
+code &quot;RX_NORM_3628_0&quot; : '3628.0' from RX_NORM
+code &quot;HCPCS_U0002&quot; : 'U0002' from HCPCS
+code &quot;CPT_84484_0&quot; : '84484.0' from CPT
+code &quot;LOINC_10839_9&quot; : '10839-9' from LOINC
+code &quot;LOINC_42757_5&quot; : '42757-5' from LOINC
+code &quot;LOINC_49563_0&quot; : '49563-0' from LOINC
+code &quot;LOINC_76399_5&quot; : '76399-5' from LOINC
+code &quot;CPT_85379_0&quot; : '85379.0' from CPT
+code &quot;LOINC_29280_5&quot; : '29280-5' from LOINC
+code &quot;LOINC_38898_3&quot; : '38898-3' from LOINC
+code &quot;LOINC_48065_7&quot; : '48065-7' from LOINC
+code &quot;LOINC_48066_5&quot; : '48066-5' from LOINC
+code &quot;LOINC_7799_0&quot; : '7799-0' from LOINC
+code &quot;LOINC_91556_1&quot; : '91556-1' from LOINC
+code &quot;CPT_83605_0&quot; : '83605.0' from CPT
+code &quot;LOINC_14118_4&quot; : '14118-4' from LOINC
+code &quot;LOINC_19239_3&quot; : '19239-3' from LOINC
+code &quot;LOINC_2518_9&quot; : '2518-9' from LOINC
+code &quot;LOINC_2519_7&quot; : '2519-7' from LOINC
+code &quot;LOINC_2524_7&quot; : '2524-7' from LOINC
+code &quot;LOINC_30241_4&quot; : '30241-4' from LOINC
+code &quot;LOINC_30242_2&quot; : '30242-2' from LOINC
+code &quot;LOINC_32132_3&quot; : '32132-3' from LOINC
+code &quot;LOINC_32133_1&quot; : '32133-1' from LOINC
+code &quot;LOINC_32693_4&quot; : '32693-4' from LOINC
+code &quot;LOINC_51829_0&quot; : '51829-0' from LOINC
+code &quot;LOINC_55932_8&quot; : '55932-8' from LOINC
+code &quot;LOINC_59032_3&quot; : '59032-3' from LOINC
+code &quot;LOINC_75366_5&quot; : '75366-5' from LOINC
+code &quot;LOINC_19240_1&quot; : '19240-1' from LOINC
+code &quot;CPT_83615_0&quot; : '83615.0' from CPT
+code &quot;LOINC_14804_9&quot; : '14804-9' from LOINC
+code &quot;LOINC_14805_6&quot; : '14805-6' from LOINC
+code &quot;CPT_86140_0&quot; : '86140.0' from CPT
+code &quot;LOINC_11039_5&quot; : '11039-5' from LOINC
+code &quot;LOINC_14634_0&quot; : '14634-0' from LOINC
+code &quot;LOINC_16503_5&quot; : '16503-5' from LOINC
+code &quot;LOINC_1988_5&quot; : '1988-5' from LOINC
+code &quot;LOINC_30522_7&quot; : '30522-7' from LOINC
+code &quot;LOINC_35648_5&quot; : '35648-5' from LOINC
+code &quot;LOINC_45062_7&quot; : '45062-7' from LOINC
+code &quot;LOINC_48421_2&quot; : '48421-2' from LOINC
+code &quot;LOINC_59182_6&quot; : '59182-6' from LOINC
+code &quot;LOINC_71426_1&quot; : '71426-1' from LOINC
+code &quot;LOINC_76485_2&quot; : '76485-2' from LOINC
+code &quot;LOINC_76486_0&quot; : '76486-0' from LOINC
+code &quot;CPT_85025_0&quot; : '85025.0' from CPT
+code &quot;LOINC_751_8&quot; : '751-8' from LOINC
+code &quot;CPT_85004&quot; : '85004' from CPT
+code &quot;CPT_85048&quot; : '85048' from CPT
+code &quot;LOINC_26474_7&quot; : '26474-7' from LOINC
+code &quot;LOINC_30364_4&quot; : '30364-4' from LOINC
+code &quot;LOINC_66140_5&quot; : '66140-5' from LOINC
+code &quot;LOINC_731_0&quot; : '731-0' from LOINC
+code &quot;LOINC_732_8&quot; : '732-8' from LOINC
+code &quot;LOINC_74401_1&quot; : '74401-1' from LOINC
+code &quot;CPT_88184_0&quot; : '88184.0' from CPT
+code &quot;LOINC_26508_2&quot; : '26508-2' from LOINC
+code &quot;LOINC_26509_0&quot; : '26509-0' from LOINC
+code &quot;LOINC_26510_8&quot; : '26510-8' from LOINC
+code &quot;LOINC_33361_7&quot; : '33361-7' from LOINC
+code &quot;LOINC_33388_0&quot; : '33388-0' from LOINC
+code &quot;CPT_82728_0&quot; : '82728.0' from CPT
+code &quot;LOINC_20567_4&quot; : '20567-4' from LOINC
+code &quot;LOINC_2276_4&quot; : '2276-4' from LOINC
+code &quot;LOINC_48141_6&quot; : '48141-6' from LOINC
+code &quot;LOINC_53048_5&quot; : '53048-5' from LOINC
+code &quot;CPT_85049_0&quot; : '85049.0' from CPT
+code &quot;HCPCS_P9019&quot; : 'P9019' from HCPCS
+code &quot;HCPCS_P9020&quot; : 'P9020' from HCPCS
+code &quot;LOINC_13057_5&quot; : '13057-5' from LOINC
+code &quot;LOINC_26515_7&quot; : '26515-7' from LOINC
+code &quot;LOINC_26516_5&quot; : '26516-5' from LOINC
+code &quot;LOINC_47284_5&quot; : '47284-5' from LOINC
+code &quot;CPT_84460_0&quot; : '84460.0' from CPT
+code &quot;LOINC_16324_6&quot; : '16324-6' from LOINC
+code &quot;LOINC_1741_8&quot; : '1741-8' from LOINC
+code &quot;LOINC_1742_6&quot; : '1742-6' from LOINC
+code &quot;LOINC_1743_4&quot; : '1743-4' from LOINC
+code &quot;LOINC_1744_2&quot; : '1744-2' from LOINC
+code &quot;LOINC_25302_1&quot; : '25302-1' from LOINC
+code &quot;LOINC_44785_4&quot; : '44785-4' from LOINC
+code &quot;LOINC_50168_4&quot; : '50168-4' from LOINC
+code &quot;LOINC_54491_6&quot; : '54491-6' from LOINC
+code &quot;LOINC_54492_4&quot; : '54492-4' from LOINC
+code &quot;LOINC_76625_3&quot; : '76625-3' from LOINC
+code &quot;LOINC_77144_4&quot; : '77144-4' from LOINC
+code &quot;CPT_84450_0&quot; : '84450.0' from CPT
+code &quot;LOINC_IMO0002&quot; : 'IMO0002' from LOINC
+code &quot;ICD_10_CM_Z_20_828&quot; : 'Z20.828' from ICD_10_CM
+code &quot;ICD_10_CM_U_07_1&quot; : 'U07.1' from ICD_10_CM
+code &quot;ICD_10_CM_E_10_9&quot; : 'E10.9' from ICD_10_CM
+code &quot;ICD_10_CM_E_11_9&quot; : 'E11.9' from ICD_10_CM
+code &quot;ICD_10_CM_I_50_9&quot; : 'I50.9' from ICD_10_CM
+code &quot;ICD_10_CM_I10&quot; : 'I10' from ICD_10_CM
+code &quot;ICD_10_CM_J_44_9&quot; : 'J44.9' from ICD_10_CM
+code &quot;ICD_10_CM_I_25_10&quot; : 'I25.10' from ICD_10_CM
+code &quot;ICD_10_CM_I_67_9&quot; : 'I67.9' from ICD_10_CM
+code &quot;ICD_10_CM_E_66_9&quot; : 'E66.9' from ICD_10_CM
+code &quot;LOINC_39156_5&quot; : '39156-5' from LOINC
+code &quot;LOINC_59574_4&quot; : '59574-4' from LOINC
+code &quot;LOINC_59575_1&quot; : '59575-1' from LOINC
+code &quot;LOINC_59576_9&quot; : '59576-9' from LOINC
+code &quot;LOINC_89270_3&quot; : '89270-3' from LOINC
+code &quot;ICD_10_CM_N_28_9&quot; : 'N28.9' from ICD_10_CM
+code &quot;ICD_10_CM_Z_59_3&quot; : 'Z59.3' from ICD_10_CM
+code &quot;ICD_10_CM_C_80_1&quot; : 'C80.1' from ICD_10_CM
+code &quot;ICD_10_CM_J_18_9&quot; : 'J18.9' from ICD_10_CM
+code &quot;ICD_10_CM_I_51_7&quot; : 'I51.7' from ICD_10_CM
+
+// concept &quot;Mental Status&quot; : {  }
+concept &quot;GCS&quot; : { &quot;LOINC_9269_2&quot; }
+// concept &quot;Work of Breathing&quot; : {  }
+// concept &quot;Persistent Dyspnea&quot; : {  }
+concept &quot;Hemoptysis&quot; : { &quot;ICD_10_CM_R_04_2&quot; }
+// concept &quot;O2 Saturation&quot; : {  }
+concept &quot;O2 Saturation (Ambulatory)&quot; : { &quot;CPT_94760&quot;,&quot;CPT_94761&quot; }
+concept &quot;Respiratory Rate&quot; : { &quot;LOINC_9279_1&quot; }
+concept &quot;Heart Rate&quot; : { &quot;LOINC_2544737_0&quot; }
+concept &quot;Systolic BP&quot; : { &quot;LOINC_8480_6&quot; }
+concept &quot;Diastolic BP&quot; : { &quot;LOINC_8462_4&quot; }
+concept &quot;FiO2&quot; : { &quot;LOINC_3150_0&quot;,&quot;LOINC_3151_8&quot;,&quot;LOINC_71835_3&quot; }
+concept &quot;Respiratory Support- Supplemental O2&quot; : { &quot;HCPCS_A4615&quot; }
+concept &quot;Respiratory Support- High Flow Nasal Canula&quot; : { &quot;HCPCS_A4615&quot; }
+concept &quot;Respiratory Support- Non Invasive Positive Pressure Ventilation&quot; : { &quot;CPT_94660_0&quot;,&quot;ICD_10_PCS_5_A_09357&quot;,&quot;ICD_10_PCS_5_A_09358&quot;,&quot;ICD_10_PCS_5_A_09457&quot;,&quot;ICD_10_PCS_5_A_09458&quot;,&quot;ICD_10_PCS_5_A_09557&quot;,&quot;ICD_10_PCS_5_A_09558&quot; }
+// concept &quot;Respiratory Support- Mechanical Ventilation&quot; : {  }
+concept &quot;Dobutamine&quot; : { &quot;HCPCS_J1250&quot;,&quot;RX_NORM_3616_0&quot; }
+concept &quot;Epinephrine&quot; : { &quot;HCPCS_J0171&quot;,&quot;RX_NORM_3992_0&quot; }
+concept &quot;Norepinephrine&quot; : { &quot;RX_NORM_7512_0&quot; }
+concept &quot;Vasopressin&quot; : { &quot;RX_NORM_11149_0&quot; }
+concept &quot;Dopamine&quot; : { &quot;HCPCS_J1265&quot;,&quot;RX_NORM_3628_0&quot; }
+concept &quot;SARS-CoV-2 test&quot; : { &quot;HCPCS_U0002&quot; }
+concept &quot;Troponin I&quot; : { &quot;CPT_84484_0&quot;,&quot;LOINC_10839_9&quot;,&quot;LOINC_42757_5&quot;,&quot;LOINC_49563_0&quot;,&quot;LOINC_76399_5&quot; }
+concept &quot;D-dimer&quot; : { &quot;CPT_85379_0&quot;,&quot;LOINC_29280_5&quot;,&quot;LOINC_29280_5&quot;,&quot;LOINC_38898_3&quot;,&quot;LOINC_48065_7&quot;,&quot;LOINC_48066_5&quot;,&quot;LOINC_7799_0&quot;,&quot;LOINC_91556_1&quot; }
+concept &quot;Lactate&quot; : { &quot;CPT_83605_0&quot;,&quot;LOINC_14118_4&quot;,&quot;LOINC_19239_3&quot;,&quot;LOINC_2518_9&quot;,&quot;LOINC_2519_7&quot;,&quot;LOINC_2524_7&quot;,&quot;LOINC_30241_4&quot;,&quot;LOINC_30242_2&quot;,&quot;LOINC_32132_3&quot;,&quot;LOINC_32133_1&quot;,&quot;LOINC_32693_4&quot;,&quot;LOINC_51829_0&quot;,&quot;LOINC_55932_8&quot;,&quot;LOINC_59032_3&quot;,&quot;LOINC_75366_5&quot;,&quot;LOINC_19240_1&quot; }
+concept &quot;Lactate Dehydrogenase&quot; : { &quot;CPT_83615_0&quot;,&quot;LOINC_14804_9&quot;,&quot;LOINC_14805_6&quot; }
+concept &quot;C-Reactive Peptide&quot; : { &quot;CPT_86140_0&quot;,&quot;LOINC_11039_5&quot;,&quot;LOINC_14634_0&quot;,&quot;LOINC_16503_5&quot;,&quot;LOINC_1988_5&quot;,&quot;LOINC_30522_7&quot;,&quot;LOINC_35648_5&quot;,&quot;LOINC_45062_7&quot;,&quot;LOINC_48421_2&quot;,&quot;LOINC_59182_6&quot;,&quot;LOINC_71426_1&quot;,&quot;LOINC_76485_2&quot;,&quot;LOINC_76486_0&quot;,&quot;LOINC_45062_7&quot;,&quot;LOINC_35648_5&quot;,&quot;LOINC_48421_2&quot; }
+concept &quot;Neutrophils (#)&quot; : { &quot;CPT_85025_0&quot;,&quot;LOINC_751_8&quot; }
+concept &quot;Lymphocytes (#)&quot; : { &quot;CPT_85004&quot;,&quot;CPT_85048&quot;,&quot;LOINC_26474_7&quot;,&quot;LOINC_30364_4&quot;,&quot;LOINC_66140_5&quot;,&quot;LOINC_731_0&quot;,&quot;LOINC_732_8&quot;,&quot;LOINC_74401_1&quot; }
+concept &quot;Lymphocyte (%)&quot; : { &quot;CPT_88184_0&quot;,&quot;LOINC_26508_2&quot;,&quot;LOINC_26509_0&quot;,&quot;LOINC_26510_8&quot;,&quot;LOINC_33361_7&quot;,&quot;LOINC_33388_0&quot; }
+concept &quot;Ferritin&quot; : { &quot;CPT_82728_0&quot;,&quot;LOINC_20567_4&quot;,&quot;LOINC_2276_4&quot;,&quot;LOINC_48141_6&quot;,&quot;LOINC_53048_5&quot; }
+concept &quot;Platelets&quot; : { &quot;CPT_85049_0&quot;,&quot;HCPCS_P9019&quot;,&quot;HCPCS_P9020&quot;,&quot;LOINC_13057_5&quot;,&quot;LOINC_26515_7&quot;,&quot;LOINC_26516_5&quot;,&quot;LOINC_47284_5&quot; }
+concept &quot;ALT&quot; : { &quot;CPT_84460_0&quot;,&quot;LOINC_16324_6&quot;,&quot;LOINC_1741_8&quot;,&quot;LOINC_1742_6&quot;,&quot;LOINC_1743_4&quot;,&quot;LOINC_1744_2&quot;,&quot;LOINC_25302_1&quot;,&quot;LOINC_44785_4&quot;,&quot;LOINC_50168_4&quot;,&quot;LOINC_54491_6&quot;,&quot;LOINC_54492_4&quot;,&quot;LOINC_76625_3&quot;,&quot;LOINC_77144_4&quot; }
+concept &quot;AST&quot; : { &quot;CPT_84450_0&quot;,&quot;LOINC_IMO0002&quot; }
+concept &quot;COVID-19 diagnosis (suspected)&quot; : { &quot;ICD_10_CM_Z_20_828&quot; }
+concept &quot;COVID-19 diagnosis (confirmed)&quot; : { &quot;ICD_10_CM_U_07_1&quot; }
+concept &quot;Diabetes Mellitus Type 1&quot; : { &quot;ICD_10_CM_E_10_9&quot; }
+concept &quot;Diabetes Mellitus Type 2&quot; : { &quot;ICD_10_CM_E_11_9&quot; }
+concept &quot;Heart Failure&quot; : { &quot;ICD_10_CM_I_50_9&quot; }
+concept &quot;Hypertension&quot; : { &quot;ICD_10_CM_I10&quot; }
+concept &quot;Chronic Obstructive Pulmonary Disease (COPD)&quot; : { &quot;ICD_10_CM_J_44_9&quot; }
+concept &quot;Cardiovascular Disease&quot; : { &quot;ICD_10_CM_I_25_10&quot; }
+concept &quot;Cerebrovascular disease&quot; : { &quot;ICD_10_CM_I_67_9&quot; }
+concept &quot;Obesity&quot; : { &quot;ICD_10_CM_E_66_9&quot; }
+// concept &quot;Obese&quot; : {  }
+concept &quot;BMI&quot; : { &quot;LOINC_39156_5&quot;,&quot;LOINC_59574_4&quot;,&quot;LOINC_59575_1&quot;,&quot;LOINC_59576_9&quot;,&quot;LOINC_89270_3&quot; }
+concept &quot;Renal Disease&quot; : { &quot;ICD_10_CM_N_28_9&quot; }
+concept &quot;Long Term Care Facility Resident&quot; : { &quot;ICD_10_CM_Z_59_3&quot; }
+concept &quot;Malignancy&quot; : { &quot;ICD_10_CM_C_80_1&quot; }
+// concept &quot;CXR Score&quot; : {  }
+concept &quot;Bilateral Pneumonia&quot; : { &quot;ICD_10_CM_J_18_9&quot; }
+concept &quot;RV dilatation&quot; : { &quot;ICD_10_CM_I_51_7&quot; }
+concept &quot;RV enlargement&quot; : { &quot;ICD_10_CM_I_51_7&quot; }
+
+</code></pre><p><code>Content not shown - (</code><code>application/elm+xml</code>, size = 35Kb)</p><p><code>Content not shown - (</code><code>application/elm+json</code>, size = 60Kb)</p></div>
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">OpenCPG</a>.  Package org.opencpg.covid19.ed.sc#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 19, 2021 14:05+0000">2021-02-19</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
